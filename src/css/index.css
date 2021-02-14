@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* input section */
+
+#input-section-container{
+  background-color: tomato;
+  color: white;
+  padding: 15px 20px;
+}
+
+#header-left-section{
+  display: flex;
+}
+#logo{
+  margin-top: 8px;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+#header-left-section h1{
+font-size: 2.4rem;
+font-family: Lucida, sans-serif;
+}
+
+#input-btn-container{
+  width: 60%;
+  margin: auto;
+  margin-top: 2rem;
+
+}
+#input{
+  padding: 15px;
+  color: grey;
+}
+#input:focus{
+  border: 1px solid tomato;
+}
+#input::placeholder{
+  color: tomato;
+}
+
+#add-btn-container{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.6rem;
+}
+#add-btn{
+  padding: 15px 20px;
+  background-color: tomato;
+  border: 1px solid white;
+  transition: 0.5s ease;
+}
+#add-btn:hover{
+  background-color: white;
+  border: 1px solid tomato;
+  color: tomato;
+}
+
+#task-list-container{
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+
+
+/* ----------------------------- mobile mode--------------------------- */
+@media (max-width: 480px) {
+  #header-left-section h1{
+    font-size: 1.8rem;
+    }
+  #input-btn-container{
+    width: 100%;
+    margin-top: 4rem;
+  }
+  #add-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #add-btn{
+    padding: 10px 15px;
+    /* width: 100%; */
+  }
+}
